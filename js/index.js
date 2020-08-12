@@ -23,7 +23,7 @@ document.getElementById('addBtn').addEventListener('click',()=>{
   function showNotes(){
       let html = "";
       let totalNotes = JSON.parse(localStorage.getItem('notes'));
-      if(totalNotes.length == 0){
+      if( totalNotes == null || totalNotes.length == 0 ){
         document.getElementById('notes').innerHTML = "<h3>Nothing here! please add some notes</h3>" 
     }
     else{
