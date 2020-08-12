@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(0,0,0,0.7);
+}
+h3,h1{
+    font-family: serif;
+    color: white;
+}
+hr{
+    background-color: white;
+}
+a.navbar-brand{
+    font-family: serif;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    font-weight: bolder;
+}
+.card{
+    border-radius: 30px;
+}
+
+
+footer h3{
+    position: relative;
+    top: 5rem;
+    display: block;
+    width: 100%;
+  
+    text-align: center;
+    font-size: 1rem;
+}
+footer h3 span{
+color: red;
+}
