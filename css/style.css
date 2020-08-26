@@ -64,3 +64,8 @@ text-align: center;
 #add-note-title,#pen-emoji{
     font-size: 1.3rem;
 }
+@media screen and (max-width:500px){
+    #welcome{
+      font-size: 1.5rem;
+    }
+}
