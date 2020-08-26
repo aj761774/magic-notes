@@ -31,6 +31,7 @@ document.getElementById('addBtn').addEventListener('click',()=>{
             html +=   `
                     <div class="card shadow my-2 mx-2 mynote" style="width:18rem;">
                     <div class="card-body">
+                       
                         <h5 class="card-title">Note ${index+1}</h5>
                         <p class="notes">${element}</p>
                         <button id = ${index} onClick = "deleteNote(this.id)" class="btn btn-warning text-white deleteBtn">Delete Note</button>
@@ -64,4 +65,22 @@ document.getElementById('addBtn').addEventListener('click',()=>{
        }
     });
   });
-  
+
+const welcome = "Welcome To Magic Notes";
+let i = 0;
+function writewelcomeText(){
+  document.getElementById('welcome').innerHTML += welcome.charAt(i++);
+  if (i<welcome.length){
+  setTimeout(writewelcomeText,100);
+}
+}
+writewelcomeText();
+document.getElementById('emoji').innerHTML="😍";
+
+function getCurrentTime(){
+      let currentTime = new Date();
+      document.getElementById('time').innerHTML = currentTime.toLocaleTimeString();
+      setTimeout(getCurrentTime,1000);
+}  
+
+getCurrentTime();

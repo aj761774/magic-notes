@@ -31,3 +31,36 @@ footer h3{
 footer h3 span{
 color: red;
 }
+#time{
+color: white;
+background-color: crimson;
+font-weight: bolder;
+text-align: center;
+}
+#welcome,#emoji{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+#emoji{
+    animation: changeSize 1.2s infinite;
+}
+@keyframes changeSize{
+    
+    30%{
+        font-size: 2rem;
+    }
+    60%{
+        font-size:1.5rem ;
+    }
+    90%{
+        font-size: 1.7rem;
+    }
+    100%{
+        font-size: 2rem;
+    }
+}
+#add-note-title,#pen-emoji{
+    font-size: 1.3rem;
+}
