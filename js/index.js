@@ -66,16 +66,16 @@ document.getElementById('addBtn').addEventListener('click',()=>{
     });
   });
 
-const welcome = "Welcome To Magic Notes";
+const addNoteTitle = "Add a note";
 let i = 0;
-function writewelcomeText(){
-  document.getElementById('welcome').innerHTML += welcome.charAt(i++);
-  if (i<welcome.length){
-  setTimeout(writewelcomeText,100);
+function addNoteTitleText(){
+  document.getElementById('addNoteTitle').innerHTML += addNoteTitle.charAt(i++);
+  if (i<addNoteTitle.length){
+  setTimeout(addNoteTitleText,100);
 }
 }
-writewelcomeText();
-document.getElementById('emoji').innerHTML="😍";
+
+addNoteTitleText();
 
 function getCurrentTime(){
       let currentTime = new Date();
