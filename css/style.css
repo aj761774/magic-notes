@@ -43,6 +43,7 @@ text-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 }
+
 #emoji{
     animation: changeSize 1.2s infinite;
 }
@@ -64,8 +65,11 @@ text-align: center;
 #add-note-title,#pen-emoji{
     font-size: 1.3rem;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:370px){
+    .card{
+        margin-top: 2rem;
+    }
     #welcome{
-      font-size: 1.5rem;
+        margin-right:1rem;
     }
 }
